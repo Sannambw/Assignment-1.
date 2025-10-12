@@ -1,13 +1,13 @@
 body {
-  background-image: url("t.ex.images:");
+  background-image: url("../img/kent-bild.jpg");
   background-repeat: no-repeat;
-  background-size: cover;       /* täcker hela elementet */
-  background-position: center;  /* centrera bilden */
+  background-size: cover;
+  background-position: center;
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 100vh;
 }
 
 .container {
