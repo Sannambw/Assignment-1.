@@ -1,9 +1,9 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  text-align: center;
   background-color: #111;
   color: white;
-  text-align: center;
 }
 
 .content {
@@ -13,26 +13,18 @@ body {
 }
 
 .background {
-  width: 100%;                                      /* hela bredden */
-  height: 400px;                                    /* höjd på bilden */
-  background-image: url("images/kent.width-1440.jpg");
+  background-image: url("../images:/background1.jpg");
   background-repeat: no-repeat;
+  background-size: cover;       /* täcker hela bredden */
   background-position: center;
-  background-size: cover;                           /* fyller hela div:en */
-  margin: 20px 0;                                   /* mellan rubrik och text */
-  border-radius: 10px;
+  width: 100vw;                 /* full bredd av viewport */
+  height: 700px;                /* höjd på bilden */
+  margin: 20px 0;               /* mellan rubrik och text */
 }
 
 p {
-  background-color: rgba(255,255,255,0.6);         /* ljus transparent ruta */
+  background-color: rgba(255,255,255,0.6);
   color: black;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-p {
-  background-color: rgba(255,255,255,0.6); /* ljus transparent ruta */
-  color: black;                            /* svart text */
   padding: 20px;
   border-radius: 10px;
 }
