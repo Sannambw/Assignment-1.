@@ -12,7 +12,7 @@ body {
   text-align: center; /* Att alla text är centrerad*/
 }
 
-/* Här bestämmer vi både färg på header.Men även avståndet ovan och under*/
+/* Här bestämmer jag både färg på header.Men även avståndet ovan och under*/
 header {
   background-color: #ADD8E6; /* Färg på bakgrundsbilden */
   padding: 30px 0;
@@ -23,7 +23,7 @@ header h1 {
   margin: 0;
 }
 
-/* I det här området bestämmer vi hur huvudblocket ska se ut.
+/* I det här området bestämmer jag hur huvudblocket ska se ut.
 - Här valde jag att ha blocket centrerat på sidan
 - Hur brett det det ska vara
 - Hur mycket luft det finns inuti
@@ -63,17 +63,17 @@ button:hover {
 }
 
 #Gator li {
-  background-color: #4169E1; /* vilken färg listan ska ha som dyker upp */
+  background-color: #4169E1; /* Vilken färg listan ska ha som dyker upp */
   margin: 5px auto;
   padding: 10px;
-  width: 50%; /* La till det här för att fönstret som dyker upp ska bara ta upp
+  width: 50%; /* Jag la till det här för att fönstret som dyker upp ska bara ta upp
   en viss del av sidan*/
 }
 
-/* Här kommer sidfoten och vad den ska se ut.*/
+/* Här kommer sidfoten och hur den ska se ut.*/
 footer {
   background-color: #4682B4; /* Vilken färg den ska ha*/
-  padding: 10px 0; /* hur bred rutan ska vara */
+  padding: 10px 0; /* Hur bred rutan ska vara */
   font-size: 14px; /* Storlek på text */
 }
 

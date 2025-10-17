@@ -13,12 +13,13 @@ button.addEventListener("click", function() {
     const li = document.createElement("li");
     li.textContent = songs[index];
     list.appendChild(li);
+  /* Betyder att de visas en gåta till när man klickar på knappen */
     index++;
     /* Här berättar den att om det inte finns några gåtor kvar nollställs den och börjar om vid nästa klick*/
   } else {
     /* Här rensas hela innehållet och listan börjar om och den behövs för att
     när du klickar på knappen ska inte listan fyllas på med gamla gåtor */
     list.innerHTML = "";
-    index = 0; // Nollställ index här **inne i else-blocket**
+    index = 0; /* Nollställer listan så den börjar om när den är slut*/
   }
 });
