@@ -1,45 +1,56 @@
+<!-- <!DOCTYPE html> talar om för webbläsaren att detta är en HTML5-sida.
+<html lang="sv"> markerar att sidan är skriven på svenska. -->
 <!DOCTYPE html>
 <html lang="sv">
 <head>
   <meta charset="UTF-8">
-  <title>Kent - Bakgrundsbild mellan text</title>
+  <title>Assignment 1 - </title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
+<!-- Body:n innehåller allt synligt innehåll som syns på webbplatsen -->
 <body>
 
-<!-- Header med rubrik -->
+<!-- Här har jag lagt till en header för att visa att jag förstår hur man bygger upp en hemsida.
+Headern används för att visa sidans titel och viktig information högst upp. -->
+
 <header>
-  <h1>Kent</h1>
+  <h1>Sannas Assignment 1</h1>
 </header>
 
-<!-- Här kommer main, bilder, text, footer, etc. -->
+<!-- Här under har jag valt att lägga till ett stycke (en paragraf) för att visa
+att jag förstår hur man använder olika koder för att kunna justera textens storlek.
+Jag har även lagt till en klass (content) för att kunna styla innehållet i CSS. -->
 
 <main class="content">
 
   <p>
-    Kent var ett svenskt rockband som bildades i Eskilstuna år 1990. Bandet bestod av Joakim Berg, Martin Sköld, Sami Sirviö och Markus Mustonen. Under sin karriär släppte Kent många klassiska låtar och blev ett av Sveriges mest älskade band. De är kända för sina melankoliska texter, starka melodier och unika sound som blandar rock, pop och elektroniska inslag. Bandet vann flera priser och fick stor kritik och uppskattning för sin musik och sina liveframträdanden. Efter mer än 25 år tillsammans avslutade Kent sin karriär 2016 med en stor avskedsturné. Trots att bandet inte längre finns kvar fortsätter deras musik att inspirera och beröra nya generationer.
+    Välkommen till min lilla gåt-samling! 🕵️‍♀️ Här kan du testa din klurighet genom att klicka på knappen och se olika gåtor dyka upp en i taget.
+    Se om du kan lösa dem innan du klickar vidare! Det är både roligt och hjärngympa – perfekt för den som gillar små utmaningar och vill skratta lite samtidigt.
+    När du har gått igenom alla gåtor startar listan om, så du kan försöka igen eller utmana dina vänner!
   </p>
 
-  <p style="font-style: italic; color: #ccc;">
-    Klicka på bilden nedanför för att komma till Kents officiella merch!
+  <!-- Här valde jag att ha min knapp som är kopplad till ett specifikt ID som är sammankopplat med koden i mitt JavaScript.
+ID:t gör att kommandot känner igen varandra och kan kopplas ihop -->
+
+  <button id="showButton">Gåtor </button>
+  <ul id="Gator"></ul>
+
+<br>
+<footer>
+  <!-- Längst ner på min sida valde jag att lägga till en sidfot, med mitt namn, klass och skola.
+Och la även till en länk till min LinkedIn-profil -->
+
+  <p>© 2025 Sanna Bergmark Wiberg | DAN25S, Medieinstitutet</p>
+  <p>Följ mig på
+    <a href=https://linkedin.com/in/sannabergmarkwiberg target="_blank">LinkedIn</a> |
   </p>
+</footer>
+
+  <!-- Den här raden länkar HTML-filen till JavaScript-filen (app.js).
+ Den behövs för att JavaScript-koden ska kunna köras på sidan och göra så att listan fungerar när man klickar. -->
+<script src="js/app.js"></script>
+
 </main>
-<!-- Bilden som knapp -->
-<div class="background-button" onclick="window.location.href='https://kent.officialmerch.se/'"></div>
 
 </body>
-
-
-
-<!--
-• En header med rubrik
-• Ett main-område med text eller bild
-• En footer med t.ex. kontaktinfo
-• CSS som gör sidan fin
-• JavaScript som gör något interaktivt, t.ex. en knapp som ändrar text
--->
-
-
-
-
-

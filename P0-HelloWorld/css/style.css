@@ -1,36 +1,79 @@
+/* CSS för Assignment 1
+   Denna fil styr utseendet på sidan:
+   - Textstorlek och färger
+   - Layout av header, main och footer
+   - Knapp och låtlista */
+/* Grund inställningar för hela hemsidan*/
 body {
-  h1 {
-    font-size: 65px; /* Ändra siffran till önskad storlek */
-  }
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #111;
-  color: white;
-  text-align: center;
+  font-family: "Times New Roman", sans-serif; /* Val av text stil*/
+  background-color: #4682B4; /* Bakgrundsfärg på hela sidan*/
+  color: black; /* Grundfärgen på texten på hela sidan*/
+  text-align: center; /* Att alla text är centrerad*/
 }
 
+/* Här bestämmer vi både färg på header.Men även avståndet ovan och under*/
+header {
+  background-color: #ADD8E6; /* Färg på bakgrundsbilden */
+  padding: 30px 0;
+}
+
+header h1 {
+  font-size: 50px; /* Storlek på texten */
+  margin: 0;
+}
+
+/* I det här området bestämmer vi hur huvudblocket ska se ut.
+- Här valde jag att ha blocket centrerat på sidan
+- Hur brett det det ska vara
+- Hur mycket luft det finns inuti
+- Bakgrundsfärg */
 .content {
   width: 80%;
   max-width: 1000px;
   margin: 50px auto;
   padding: 20px;
-  border-radius: 10px;
+  background-color: #87CEFA;
 }
 
-.background-button {
-  width: 80%;                  /* bilden är mindre än hela sidan */
-  max-width: 800px;
-  height: 250px;               /* höjd på bilden */
-  margin: 20px auto;           /* centrerar bilden */
-  background-image: url("../images:/background1.jpg"); /* byt till din bild */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;     /* hela bilden syns */
-  border-radius: 10px;
-  cursor: pointer;             /* visar hand-ikon vid hover */
-  transition: transform 0.2s;
+p {
+  font-size: 15px; /* Storlek på texten i paragrafen */
+  line-height: 2.0; /* Bestämmer hur långt mellanrum det ska vara i texten vid paragrafen */
+  margin-bottom: 20px;
 }
 
-.background-button:hover {
-  transform: scale(1.05);      /* liten effekt vid hover */
+/* Nu har vi kommit till knappen och dens utseende. */
+button {
+  background-color: #4682B4; /* Vilken färg knappen ska ha*/
+  border: none;
+  padding: 10px 20px; /* Hur bred och djup knappen ska vara */
+  font-size: 16px; /* Storlek på texten */
+  transition: background-color 0.3s; /* Hur många sekunder det tar för knappen
+  att byta färg när musen hamnar på den. Som gör de mer behagligt för ögat när de ändras */
 }
+
+button:hover {
+  background-color: #0000CD; /* När du har musen över knappen ska den ändra färg*/
+}
+
+#Gator {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#Gator li {
+  background-color: #4169E1; /* vilken färg listan ska ha som dyker upp */
+  margin: 5px auto;
+  padding: 10px;
+  width: 50%; /* La till det här för att fönstret som dyker upp ska bara ta upp
+  en viss del av sidan*/
+}
+
+/* Här kommer sidfoten och vad den ska se ut.*/
+footer {
+  background-color: #4682B4; /* Vilken färg den ska ha*/
+  padding: 10px 0; /* hur bred rutan ska vara */
+  font-size: 14px; /* Storlek på text */
+}
+
